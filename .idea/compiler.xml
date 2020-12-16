@@ -6,23 +6,41 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-cloud-service-order" />
-        <module name="spring-cloud-template" />
-        <module name="spring-cloud-feign" />
+        <module name="spring-cloud-service-user" />
+        <module name="spring-cloud-config-server" />
+        <module name="spring-cloud-config-client-dynamics-kafka" />
         <module name="spring-cloud-zuul" />
         <module name="spring-cloud-ribbon" />
-        <module name="spring-cloud-service-user" />
+        <module name="spring-cloud-template" />
+        <module name="spring-cloud-sleuth" />
+        <module name="spring-cloud-config-client-static" />
+        <module name="spring-cloud-zipkin" />
+        <module name="spring-cloud-config-server-dynamics-kafka" />
         <module name="spring-cloud-eureka-server" />
+        <module name="spring-cloud-hystrix" />
+        <module name="spring-cloud-service-order" />
+        <module name="spring-cloud-feign" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-cloud-config-client" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-cloud-config-client" options="-parameters" />
+      <module name="spring-cloud-config-client-dynamics-kafka" options="-parameters" />
+      <module name="spring-cloud-config-client-static" options="-parameters" />
+      <module name="spring-cloud-config-server" options="-parameters" />
+      <module name="spring-cloud-config-server-dynamics-kafka" options="-parameters" />
       <module name="spring-cloud-eureka-server" options="-parameters" />
       <module name="spring-cloud-feign" options="-parameters" />
+      <module name="spring-cloud-hystrix" options="-parameters" />
       <module name="spring-cloud-ribbon" options="-parameters" />
       <module name="spring-cloud-service-order" options="-parameters" />
       <module name="spring-cloud-service-user" options="-parameters" />
+      <module name="spring-cloud-sleuth" options="-parameters" />
+      <module name="spring-cloud-zipkin" options="-parameters" />
       <module name="spring-cloud-zuul" options="-parameters" />
     </option>
   </component>

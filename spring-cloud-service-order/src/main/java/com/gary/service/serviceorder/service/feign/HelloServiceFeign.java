@@ -1,6 +1,6 @@
-package com.gary.feign.springcloudfeign.service;
+package com.gary.service.serviceorder.service.feign;
 
-import com.gary.feign.springcloudfeign.model.Person;
+import com.gary.service.serviceorder.model.Person;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 

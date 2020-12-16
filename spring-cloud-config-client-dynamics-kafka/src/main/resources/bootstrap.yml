@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      #uri: http://localhost:7001
+      profile: dev
+      label: main
+      #fail-fast: true
+      discovery:
+        service-id: config-server
+        enabled: true
+    bus:
+      refresh:
+        enabled: true
+          #username: user
+          #password: 123456
+  kafka:
+    bootstrap-servers:
+      - localhost:9092
+server:
+  port: 7002
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    shutdown:
+      enabled: false
+

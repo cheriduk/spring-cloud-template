@@ -11,6 +11,13 @@
         <option value="$PROJECT_DIR$/spring-cloud-zuul/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-ribbon/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-sleuth/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-zipkin/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-config-client-static/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-config-client-dynamics-kafka/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-config-server-dynamics-kafka/pom.xml" />
       </list>
     </option>
   </component>

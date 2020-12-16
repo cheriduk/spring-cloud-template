@@ -1,7 +1,7 @@
 package com.gary.feign.springcloudfeign.web;
 
 import com.gary.feign.springcloudfeign.model.Person;
-import com.gary.feign.springcloudfeign.service.HelloServiceFeign;
+import com.gary.feign.springcloudfeign.service.feign.HelloServiceFeign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,4 +35,5 @@ public class RestClientController {
     public String getPort() {
         return client.getPort();
     }
+
 }

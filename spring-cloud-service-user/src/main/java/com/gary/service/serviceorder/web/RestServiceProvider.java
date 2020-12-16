@@ -11,6 +11,10 @@ public class RestServiceProvider {
     @Value("${spring.cloud.client.ipAddress}")
     private String ipAddress;
 
+    // HostInfoEnvironmentPostProcessor
+    @Value("${spring.cloud.client.ip-address}")
+    private String ip;
+
     /**
      * @param name
      * @return Person
@@ -44,7 +48,7 @@ public class RestServiceProvider {
      */
     @GetMapping(value = "/demo/getHost/{name}")
     public String getHost(@PathVariable String name) {
-        return "hi, " + name + "! i from " + ipAddress + ":" + port;
+        return "hi, " + name + "! i from " + ip + ":" + port;
     }
 
     /**
